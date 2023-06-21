@@ -1,0 +1,23 @@
+ // Libraries used in this project--
+
+- MDB ( material design Bootstrap)
+   visit its official website to for installations
+
+- command to install react-redux redux toolkit,react-router-dom 
+      npm i --save react-redux @reduxjs/toolkit react-router-dom
+
+-create global store(read redux toolkit docs by Whataboutcoding)
+
+->MDB ->Extended docs -> shopping carts
+
+// problems occured in this project 
+
+- input quantity is not updating when increased or decreased
+-total quantity and total price is going in negative value when decreased below 0
+
+
+// features can be added
+
+- favrouites 
+- pinned
+-check out page
