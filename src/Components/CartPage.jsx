@@ -21,6 +21,7 @@ import {
   removeItem,
   decreaseItemQuantity,
   increaseItemQuantity,
+  setItemQuantity
 } from "../features/cartSlice";
 
 export default function CartPage() {
@@ -98,11 +99,15 @@ export default function CartPage() {
                         </MDBBtn>
 
                         <MDBInput
-                          defaultValue={data.quantity}
+                          value={data.quantity}
                           min={0}
                           type="number"
                           label="Quantity"
                           /*  onChange={()=> null} */
+                          onChange={(e) =>
+                            dispatch(setItemQuantity({ id: data.id, quantity: e.target.value }))
+                          }
+                        
                         />
 
                         <MDBBtn
